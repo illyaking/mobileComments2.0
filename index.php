@@ -25,7 +25,7 @@ include('includes/constants.php');
     <div class="container-fluid borderBoi">
         <div class="start row">
             <div class="col-md-10">
-                <input type="text" id="commodity" class="begin" value=" " />
+                <input type="text" id="commodity" class="begin" value="" />
             </div>
             <div class="col-md-2">
                 <input type="submit" id="commodityButton" value="Start" />
@@ -104,7 +104,7 @@ include('includes/constants.php');
         ?>
         </div>
     </div>
-    <textarea name="description" id="description" rows="5"></textarea>
+    <textarea name="description" id="description" rows="4"></textarea>
     <div class="container-fluid">
         <div class="row last">
             <div class="col-md-3">

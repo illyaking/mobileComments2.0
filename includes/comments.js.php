@@ -9,7 +9,7 @@ document.getElementById("commodity").focus();
 
 // Special Buttons
     
-   var special = [" ", ",", ".", "\n", "Reference: ~~ADD WEBSITE ADDRESS~~."];
+   var special = [" ", ",", ".", "\n", "Reference: ~~ADD WEBSITE ADDRESS~~." , "Freight is "];
    
     $("#comma").on("click", function () {
         $('#description').val(($('#description').val() + special[1]));
@@ -262,10 +262,10 @@ var packaging = [ "bag", "bags", "bottle", "bottles", "box", "boxes", "bundle", 
 // Shipper's Description
 
    var shipper = [
-   "Originally billed as ~~ ADD COMMODITY~~ at class ~~ ADD CLASS ~~ with NMFC ~~ ADD NMFC ~~. Change due to ~~proper description/more specific description/ or other characteristics~~, NMFC, and lower/higher density.",
-   "Originally tendered as ~~ ADD COMMODITY~~ at class ~~ ADD CLASS ~~ with NMFC ~~ ADD NMFC ~~. Change due to ~~proper description/more specific description/ or other characteristics~~, NMFC, and lower/higher density.",
-   "Originally billed as ~~ ADD COMMODITY~~ at class ~~ ADD CLASS ~~ with no NMFC ~~ ADD NMFC ~~. Change due to ~~proper description/more specific description/ or other characteristics~~, NMFC, and lower/higher density.",
-   "Originally tendered as ~~ ADD COMMODITY~~ at class ~~ ADD CLASS ~~ with no NMFC ~~ ADD NMFC ~~. Change due to ~~proper description/more specific description/ or other characteristics~~ NMFC, and lower/higher density.",
+   "Originally billed as ~~ ADD COMMODITY~~ at class ~~ ADD CLASS ~~ with NMFC ~~ ADD NMFC ~~. Change due to ~~proper description/more specific description/ or other characteristics~~, correct NMFC, and lower/higher density.",
+   "Originally tendered as ~~ ADD COMMODITY~~ at class ~~ ADD CLASS ~~ with NMFC ~~ ADD NMFC ~~. Change due to ~~proper description/more specific description/ or other characteristics~~, correct NMFC, and lower/higher density.",
+   "Originally billed as ~~ ADD COMMODITY~~ at class ~~ ADD CLASS ~~ with no NMFC ~~ ADD NMFC ~~. Change due to ~~proper description/more specific description/ or other characteristics~~, correct NMFC, and lower/higher density.",
+   "Originally tendered as ~~ ADD COMMODITY~~ at class ~~ ADD CLASS ~~ with no NMFC ~~ ADD NMFC ~~. Change due to ~~proper description/more specific description/ or other characteristics~~, correct NMFC, and lower/higher density.",
    "Correctly rated and described.",
    "Originally billed as ~~ ADD COMMODITY~~ at class ~~ ADD CLASS ~~ with an invalid NMFC. Change due to ~~proper description/more specific description/ or other characteristics~~, NMFC, and lower/higher density."
    ];
@@ -438,7 +438,7 @@ var packaging = [ "bag", "bags", "bottle", "bottles", "box", "boxes", "bundle", 
     });
     
     $('#commodityButton').click(function () {
-        $('#description').val($('#commodity').val() + ",");
+         $('#description').val( special[5] + $('#commodity').val() + ",");
     });
     
     $('#delete').click(function () {
